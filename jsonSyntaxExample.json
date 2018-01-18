@@ -1,5 +1,5 @@
 {
-   "mainLang":"c++",
+   "lang":"c++",
    "program":{
       "includes":[
          "iostream",
@@ -44,9 +44,7 @@
                      "id":"mystr",
                      "type":"std::string",
                      "value":[
-                        {
-                           "data":" world! "
-                        }
+                        " world! "
                      ]
                   }
                },
