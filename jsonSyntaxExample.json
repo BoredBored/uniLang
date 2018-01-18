@@ -68,17 +68,21 @@
                         {
                            "operator":{
                               "id":"<<",
-                              "data":{
-                                 "type":"const char*",
-                                 "value":"Hello ",
-                                 "operator":{
-                                    "id":"+",
-                                    "var":{
-                                       "id":"str",
-                                       "type":"std::string"
+                              "data":[
+                                 {
+                                    "type":"const char*",
+                                    "value":"Hello "
+                                 },
+                                 {
+                                    "operator":{
+                                       "id":"+",
+                                       "var":{
+                                          "id":"str",
+                                          "type":"std::string"
+                                       }
                                     }
                                  }
-                              }
+                              ]
                            }
                         },
                         {
@@ -94,10 +98,12 @@
                   },
                   {
                      "return":{
-                        "data":{
-                           "type":"const int",
-                           "value":0
-                        }
+                        "data":[
+                           {
+                              "type":"const int",
+                              "value":0
+                           }
+                        ]
                      }
                   }
                ]
