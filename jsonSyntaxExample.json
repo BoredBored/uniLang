@@ -1,92 +1,108 @@
 {
    "lang":"c++",
-   "program":{
-      "includes":[
-         "iostream",
-         "string"
-      ],
-      "prototypes":[
-         {
-            "type":"int",
-            "id":"main",
-            "args":[
-               {
-                  "type":"void",
-                  "id":null
-               }
-            ]
-         }
-      ],
-      "global":[
-         {
-            "var":{
-               "id":"str",
-               "type":"std::string",
-               "values":[
-                  " world! "
+   "program":[
+      {
+         "includes":[
+            "iostream",
+            "string"
+         ]
+      },
+      {
+         "prototypes":[
+            {
+               "type":"int",
+               "id":"main",
+               "args":[
+                  {
+                     "type":"void",
+                     "id":null
+                  }
                ]
             }
-         }
-      ],
-      "func":[
-         {
-            "type":"int",
-            "id":"main",
-            "args":[
-               {
-                  "type":"void",
-                  "id":null
+         ]
+      },
+      {
+         "global":[
+            {
+               "var":{
+                  "id":"str",
+                  "type":"std::string",
+                  "values":[
+                     " world! "
+                  ]
                }
-            ],
-            "contents":[
-               {
-                  "var":{
-                     "id":"mystr",
-                     "type":"std::string",
-                     "value":[
-                        " world! "
-                     ]
+            }
+         ]
+      },
+      {
+         "func":[
+            {
+               "type":"int",
+               "id":"main",
+               "args":[
+                  {
+                     "type":"void",
+                     "id":null
                   }
-               },
-               {
-                  "type":"ostream",
-                  "id":"std::cout",
-                  "args":[
-                     {
-                        "type":null,
-                        "id":null
+               ],
+               "scope":[
+                  {
+                     "var":{
+                        "id":"mystr",
+                        "type":"std::string",
+                        "value":[
+                           " world! "
+                        ]
                      }
-                  ],
-                  "params":[
-                     {
-                        "operator":{
-                           "id":"<<",
-                           "data":{
-                              "type":"const char*",
-                              "value":"Hello ",
-                              "operator":{
-                                 "id":"+",
-                                 "var":{
-                                    "id":"str",
-                                    "type":"std::string"
+                  },
+                  {
+                     "type":"ostream",
+                     "id":"std::cout",
+                     "args":[
+                        {
+                           "type":null,
+                           "id":null
+                        }
+                     ],
+                     "params":[
+                        {
+                           "operator":{
+                              "id":"<<",
+                              "data":{
+                                 "type":"const char*",
+                                 "value":"Hello ",
+                                 "operator":{
+                                    "id":"+",
+                                    "var":{
+                                       "id":"str",
+                                       "type":"std::string"
+                                    }
                                  }
                               }
                            }
-                        }
-                     },
-                     {
-                        "operator":{
-                           "id":"<<",
-                           "var":{
-                              "type":"std::string",
-                              "id":"str"
+                        },
+                        {
+                           "operator":{
+                              "id":"<<",
+                              "var":{
+                                 "type":"std::string",
+                                 "id":"str"
+                              }
                            }
                         }
+                     ]
+                  },
+                  {
+                     "return":{
+                        "data":{
+                           "type":"const int",
+                           "value":0
+                        }
                      }
-                  ]
-               }
-            ]
-         }
-      ]
-   }
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
