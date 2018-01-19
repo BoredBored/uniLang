@@ -24,13 +24,17 @@
       {
          "global":[
             {
-               "var":{
-                  "id":"str",
-                  "type":"std::string",
-                  "values":[
-                     " world! "
-                  ]
-               }
+               "var":[
+                  {
+                     "id":"str",
+                     "type":"std::string"
+                  },
+                  {
+                     "values":[
+                        " world! "
+                     ]
+                  }
+               ]
             }
          ]
       },
@@ -47,13 +51,17 @@
                ],
                "scope":[
                   {
-                     "var":{
-                        "id":"mystr",
-                        "type":"std::string",
-                        "value":[
-                           " world! "
-                        ]
-                     }
+                     "var":[
+                        {
+                           "id":"mystr",
+                           "type":"std::string"
+                        },
+                        {
+                           "value":[
+                              " world! "
+                           ]
+                        }
+                     ]
                   },
                   {
                      "type":"ostream",
@@ -76,10 +84,12 @@
                                  {
                                     "operator":{
                                        "id":"+",
-                                       "var":{
-                                          "id":"str",
-                                          "type":"std::string"
-                                       }
+                                       "var":[
+                                          {
+                                             "id":"str",
+                                             "type":"std::string"
+                                          }
+                                       ]
                                     }
                                  }
                               ]
